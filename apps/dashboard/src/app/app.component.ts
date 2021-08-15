@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Message } from '@inventory/api-interfaces';
 
 @Component({
   selector: 'inventory-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
+
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
-  constructor(private http: HttpClient) {}
+  title = 'Inventory';
+  links= [
+    {path: '', icon: 'home', title: 'Home'},
+    {path: 'cars', icon: 'view_list', title: 'Cars'}
+  ]
 }

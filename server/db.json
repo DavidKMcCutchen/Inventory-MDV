@@ -1,0 +1,22 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "make": "Ford",
+      "model": "Fusion",
+      "year": "Year"
+    },
+    {
+      "id": 2,
+      "make": "Nissan",
+      "model": "Altima",
+      "year": "2021"
+    },
+    {
+      "id": 3,
+      "make": "Ford",
+      "model": "Mustang",
+      "year": "1967"
+    }
+  ]
+}

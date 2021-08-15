@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="col-50" layout="row" layout-align="center center">
+    <inventory-cars-list
+      [cars]="allCars$ | async"
+      (selected)="selectCar($event)"
+      (deleted)="deleteCar($event)"
+    ></inventory-cars-list>
+  </div>
+  <div class="col-50" layout="row" layout-align="center center">
+    <inventory-cars-details
+      [car]="selectedCar$ | async"
+      (saved)="saveCar($event)"
+      (cancelled)="cancel()"
+      [form]="form"
+    ></inventory-cars-details>
+  </div>
+</div>
